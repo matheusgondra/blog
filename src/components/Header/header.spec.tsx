@@ -18,11 +18,19 @@ describe("Header", () => {
 		expect(headerElement).toBeDefined();
 	});
 
-	it("Should render a avatar image", () => {
+	it("Should render an avatar image", () => {
 		render(<Header />);
 
 		const avatarImage = screen.getByAltText("imagem de perfil de Matheus de Gondra");
 
 		expect(avatarImage).toBeInTheDocument();
+	});
+
+	it("Should render a title", () => {
+		render(<Header />);
+
+		const title = screen.getByText("Gondra Blog", { exact: true });
+
+		expect(title).toBeInTheDocument();
 	});
 });
