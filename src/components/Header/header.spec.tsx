@@ -33,4 +33,14 @@ describe("Header", () => {
 
 		expect(title).toBeInTheDocument();
 	});
+
+	it("Should render a navigation list with two links", () => {
+		render(<Header />);
+
+		const nav = screen.getByRole("navigation");
+		const links = screen.getAllByRole("link");
+
+		expect(nav).toBeInTheDocument();
+		expect(links.length).toBe(2);
+	});
 });
