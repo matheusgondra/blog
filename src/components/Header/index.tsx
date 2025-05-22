@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function Header() {
 	return (
@@ -10,10 +11,14 @@ export function Header() {
 			<nav>
 				<ul>
 					<li>
-						<a href="https://www.linkedin.com/in/matheusgondra/">Matheus Gondra</a>
+						<a target="__blank" href="https://www.linkedin.com/in/matheusgondra/">
+							<FaGithub className="icon" /> Matheus Gondra
+						</a>
 					</li>
 					<li>
-						<a href="https://github.com/matheusgondra">matheusgondra</a>
+						<a target="__blank" href="https://github.com/matheusgondra">
+							<FaLinkedin className="icon" /> matheusgondra
+						</a>
 					</li>
 				</ul>
 			</nav>
