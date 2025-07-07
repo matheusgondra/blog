@@ -1,7 +1,7 @@
 .card {
 	width: 100%;
-	max-width: 296px;
-	min-height: 123px;
+	min-width: 296px;
+	height: 123px;
 	background-color: var(--color-slate-800);
 	border: 2px solid var(--color-slate-800);
 	border-radius: 5px;
@@ -32,4 +32,13 @@
 
 .time {
 	color: var(--color-slate-500);
+}
+
+.summary {
+	color: var(--color-slate-400);
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	line-height: 1.4;
 }
